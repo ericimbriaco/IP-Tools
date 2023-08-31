@@ -1,0 +1,8 @@
+Version 1.1
+
+-You can change between ookla Speedtest or geschwindikkeit.de
+-Change Folder Structure
+-Add Tab System
+-Add Grid Lyout for IP Info
+-Add More Details Buttom
+-Add Reload Button

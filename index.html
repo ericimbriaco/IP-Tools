@@ -1,0 +1,95 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta discr>
+	<title>wer das liest ist dumm nigga </title>
+	<link href="/assets/index.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+	
+</head>
+
+<body>
+
+	<header>
+
+		<div id="iptoolslogo">TitanRTX IP Tools</div>
+		<div class="menu">
+			<li>
+				<a class="tablinks" id="tablinksHome" ><i class="fa fa-fw fa-home"> </i>Home</a>
+				<a class="tablinks" id="tablinksSpeedtest1"><i class="fa fa-fw fa-tachometer"> </i>Speedtest</a>
+			</li>
+
+		</div>
+
+	</header>
+
+	</div>
+
+	<div class="content-box">
+		<div class="content">
+
+				<div id="yourip" class="tabcontent">
+
+					<div id="reload-btn">
+						<a href="" class ="linkblack"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+					</div>
+
+					<div class="content-grid">
+						<div id="welcome-text">
+							<p>Hello, your IP is:</p>
+						</div>
+
+						<span id="ipv4">84.143.186.68</span>
+						
+						<button class ="btn ipcopybutton" id="ipcopybtn">Copy</button>
+						<span id="isp">Deustche Telekom AG</span>
+					</div>
+
+					<div id="more-details">
+						<a class ="linkblack" id="more-details-btn" onclick="detilasFunction()"><i class="fa fa-caret-right" aria-hidden="true"></i>  More Details</a>
+						<a class ="linkblack" id="close-details-btn" onclick="detilasFunction()"><i class="fa fa-caret-down" aria-hidden="true"></i>  Close Details</a>
+					</div>
+
+					<div id="details">
+						<span id="dots"></span>
+						<p>pls wait for the next update</p>
+					</div>
+
+				</div>
+	
+	
+				<div id="speedtest" class="tabcontent">
+					<!--SPEEDTEST: https://account.speedtestcustom.com/configuration/test-->
+					<iframe width="100%" height="650px" frameborder="0" src="https://titanrtx.speedtestcustom.com"></iframe>
+					<a class="linkblack" onclick="openCity(event, 'speedtest-by-geschwindigkeit')" ><i class="fa fa-fw fa-tachometer"></i>Use Speedtest by geschwindigkeit.de</a>
+				</div>
+
+				<div id="speedtest-by-geschwindigkeit" class="tabcontent">
+					<div style="text-align:right;"><div style="min-height:360px;"><div style="width:100%;height:0;padding-bottom:50%;position:relative;"><iframe style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;min-height:360px;border:none;overflow:hidden !important;" src="https://www.metercustom.net/plugin/?hl=de&th=w"></iframe></div></div>Anbieter <a href="https://www.geschwindigkeit.de">Geschwindigkeit.de</a></div>
+				</div>
+
+		</div>
+	</div>
+
+	<footer>
+		<p>© <span id = "year"></span> <a href="http://titanrtx.de" target="_blank" class="linkblau">TitanRTX</a> - v1.1 <a href="http://titanrtx.de/support" target="_blank" class="linkblau">Support</a></p>
+
+	</footer>
+
+	<script src="/assets/main.js"></script>
+
+
+</body>
+
+</html>
+

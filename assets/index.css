@@ -1,0 +1,169 @@
+*{
+	font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #f1f1f1;
+	margin: 0px;
+	width: 450px;
+
+}
+
+header{
+	background-color: #24252a;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0px 9px 16px -2px rgba(0,0,0,0.41);
+	position: relative;
+	height: 50px;
+
+}
+
+hr{
+	padding: 0px;
+	margin: 0px;
+}
+
+h1{
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 3px;
+}
+
+footer{
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color:white;
+
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+button{
+	background-color: #24252a;
+	border: none;
+}
+
+li{
+	list-style: none;
+}
+
+
+.linkblau{
+	color:blue;
+}
+
+.linkblack{
+	color: black;
+}
+
+#iptoolslogo{
+	color: white;
+	padding-left: 10px;
+	font-size: 20px;
+	
+}
+
+.menu{
+	float: right;
+	cursor: pointer;
+	margin-right: 10px;
+	color: white;
+}
+
+.content-box{
+	background-color: white;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+.content{
+	padding:10px
+
+}
+
+.btn{
+	padding: 9px 25px;
+	background-color: #24252a;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	color:white;
+}
+
+.btn:hover{
+	background-color: #40404d;
+}
+
+#yourip{
+	margin-left: 25px;
+	font-size: 24px;
+
+}
+
+#ipv4{
+	color: #40404d;
+	font-size: 35px;
+	grid-area: ip;
+}
+
+.tabcontent{
+	display: none;
+}
+
+.tablinks{
+	margin-left: 10px;
+}
+
+.content-grid{
+	display: grid;
+	grid-template-columns: 250px 100px;
+	grid-template-rows: 50px 40px 40px;
+	grid-template-areas: 
+		"hello hello2"
+		"ip copy"
+		"telekom telekom2";
+}
+
+#ipcopybtn{
+	grid-area: copy;
+}
+
+#welcome-text{
+	grid-area: hello;
+}
+
+#reload-btn{
+	float: right;
+	font-size: 16px;
+
+}
+
+#isp{
+	grid-area: telekom;
+	font-size: 12px;
+}
+
+#more-details{
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#details{
+	display: none;
+}
+
+#close-details-btn{
+	display: none;
+}
+
+#speedtest{
+	text-align: center;
+	cursor: pointer;
+}

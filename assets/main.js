@@ -24,28 +24,24 @@ const tablinksHome = document.getElementById("tablinksHome");
 const tablinksSpeedtest1 = document.getElementById("tablinksSpeedtest1");
 
 tablinksHome.onclick = function(){
-  openCity(event, 'yourip')
+  changeTabContent(event, 'yourip')
 }
 
 tablinksSpeedtest1.onclick = function(){
-  openCity(event, 'tablinksSpeedtest1')
+  changeTabContent(event, 'speedtest-by-geschwindigkeit')
 }
 
-openCity(event, 'yourip');
+changeTabContent(event, 'yourip');
 
 
 
-function openCity(evt, cityName) {
+function changeTabContent(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
 
@@ -76,24 +72,4 @@ function copy(text)
     finally {
         document.body.removeChild(textarea);
     }
-}
-
-//--------------- MORE DETIALS JS ---------------
-function detilasFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("details");
-  var openText = document.getElementById("more-details-btn");
-  var closeText = document.getElementById("close-details-btn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    openText.style.display = "none";
-    closeText.style.display ="inline";
-    moreText.style.display ="inline";
-  } else {
-    dots.style.display = "none";
-    openText.style.display = "inline";
-    closeText.style.display ="none";
-    moreText.style.display ="none";
-  }
 }

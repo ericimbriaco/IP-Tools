@@ -3,23 +3,22 @@
   "name": "TitanRTX IP Tools",
   "description": "This Extension shows your IP Address",
   "version": "1.2",
+
   "action": {
-    "default_popup": "index.html",
-    "default_icon": "/img/icon.png"
+    "default_popup": "/popup/index.html"
   },
+
+  "icons":{
+
+  },
+
   "permissions":[
-    "clipboardWrite"
-
+    "clipboardWrite",
+    "notifications",
+    "storage"
   ],
-  "content_scripts": [
-    {
-      "all_frames": true,
-      "js": ["/assets/main.js", "index.html"],
-      "matches": [
-        "https://developer.chrome.com/docs/extensions/*",
-        "https://developer.chrome.com/docs/webstore/*"
 
-      ]
-    }
-  ]
+  "background":{
+    "service_worker": "background.js"
+  }
 }

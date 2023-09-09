@@ -8,8 +8,10 @@ const isp = document.getElementById('isp');
 const country = document.getElementById('country');
 const city = document.getElementById('city');
 const zipcode = document.getElementById('zipcode');
+const iptype = document.getElementById('iptype');
 
 fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9cccd')
+//fetch('http://ipwho.is/')
 .then((res) => res.json())
 .then((data) => {
     // API: https://ipgeolocation.io/documentation/ip-geolocation-api.html
@@ -17,10 +19,11 @@ fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9ccc
     ipv4.innerHTML = data.ip;
     isp.innerHTML = data.isp;
     country.innerHTML = data.country_name;
-    city.innerHTML = data.state_prov;
+    city.innerHTML = data.city;
     zipcode.innerHTML = data.zipcode;
-});
+    iptype.innerHTML = data.type;
 
+});
 //--------------- TAB CHANGER (INDEX - SPEEDTEST)---------------
 
 const tablinksHome = document.getElementById("tablinksHome");
@@ -76,3 +79,4 @@ function copy(text)
         document.body.removeChild(textarea);
     }
 }
+

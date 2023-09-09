@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "TitanRTX IP Tools",
-  "description": "This Extension shows your IP Address",
+  "description": "See your IP Address, Speedtest",
   "version": "1.2",
 
   "action": {

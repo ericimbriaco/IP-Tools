@@ -6,6 +6,8 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 const ipv4 = document.getElementById('ipv4');
 const isp = document.getElementById('isp');
 const country = document.getElementById('country');
+const city = document.getElementById('city');
+const zipcode = document.getElementById('zipcode');
 
 fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9cccd')
 .then((res) => res.json())
@@ -14,9 +16,10 @@ fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9ccc
     console.log(data);
     ipv4.innerHTML = data.ip;
     isp.innerHTML = data.isp;
-    //country.innerHTML = data.country_name;
+    country.innerHTML = data.country_name;
+    city.innerHTML = data.state_prov;
+    zipcode.innerHTML = data.zipcode;
 });
-
 
 //--------------- TAB CHANGER (INDEX - SPEEDTEST)---------------
 

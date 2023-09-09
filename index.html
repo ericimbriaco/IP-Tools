@@ -17,9 +17,7 @@
 </head>
 
 <body>
-
 	<header>
-
 		<div id="iptoolslogo">TitanRTX IP Tools</div>
 		<div class="menu">
 			<li>
@@ -28,43 +26,53 @@
 			</li>
 
 		</div>
-
 	</header>
 
-	</div>
+	<main>
+		<!--TAB: YOUR IP-->
+		<section class="tabcontent" id="yourip">
+			
+			<div id="reload-btn">
+				<a href="" class ="linkblack"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+			</div>
 
-	<div class="content-box">
-		<div class="content">
+			<div id="your-ip-information">
+				<p>Hello, your IPv4 is: <br> <span id="ipv4">Please wait...</span> <button class="btn button">Copy</button> <br> <span id="isp"></span></p>
+			</div>
 
-				<div id="yourip" class="tabcontent">
-
-					<div id="reload-btn">
-						<a href="" class ="linkblack"><i class="fa fa-refresh" aria-hidden="true"></i></a>
-					</div>
-
-					<div class="content-grid">
-						<div id="welcome-text">
-							<p>Hello, your IP is:</p>
-						</div>
-
-						<span id="ipv4">XXX.XXX.XXX.XXX</span>
+			<details id="more-ip-details">
+				<summary style="cursor: pointer;">Click for more Infomation</summary>
+				<table id="table-more-detials">
+					<tr>
 						
-						<button class ="btn ipcopybutton" id="ipcopybtn">Copy</button>
-						<span id="isp">Internet Provider</span>
-					</div>
+						<td>IPv6:</td>
+						<td><span>Not available</span></td>
+					</tr>
+					<tr>
+						<td>Country:</td>
+						<td><span id="country">Not available</span></td>
+					</tr>
+					<tr>
+						<td>City:</td>
+						<td><span id="city">Not available</span></td>
+					</tr>
+					<tr>
+						<td>Zipcode:</td>
+						<td><span id="zipcode">Not available</span></td>
+					</tr>
+				</table>
+			 </details>
 
-				</div>
+		</section>
 
-
-				<div id="speedtest-by-geschwindigkeit" class="tabcontent">
-					<div style="text-align:right;"><div style="min-height:360px;"><div style="width:100%;height:0;padding-bottom:50%;position:relative;"><iframe style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;min-height:360px;border:none;overflow:hidden !important;" src="https://www.metercustom.net/plugin/?hl=de&th=w"></iframe></div></div></div>
-				</div>
-
-		</div>
-	</div>
+		<!--TAB: SPEEDTEST-->
+		<section class="tabcontent" id="speedtest-by-geschwindigkeit">
+			<div style="text-align:right;"><div style="min-height:360px;"><div style="width:100%;height:0;padding-bottom:50%;position:relative;"><iframe style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;min-height:360px;border:none;overflow:hidden !important;" src="https://www.metercustom.net/plugin/?hl=de&th=w"></iframe></div></div></div>
+		</section>
+	</main>
 
 	<footer>
-		<p>© <span id = "year"></span> <a href="https://titanrtx.de" target="_blank" class="linkblau">TitanRTX</a> - v1.1 <a href="https://titanrtx.de/support" target="_blank" class="linkblau">Support</a></p>
+		<p>© <span id = "year"></span> <a href="https://titanrtx.de" target="_blank" class="linkblau">TitanRTX</a> - v1.2 <a href="https://titanrtx.de/support" target="_blank" class="linkblau">Support</a></p>
 
 	</footer>
 

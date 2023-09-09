@@ -6,3 +6,11 @@ Version 1.1
 -Add Grid Lyout for IP Info
 -Add More Details Buttom
 -Add Reload Button
+
+Version 1.2
+
++ Add "Click for more INFOMATIOENS Section"
++ Add IPv6, Country, City, Zipcode
+~ Fixed Font size
+~ Genral Bug Fixes
+- Remove Grid Layout

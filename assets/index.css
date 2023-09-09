@@ -1,3 +1,5 @@
+
+
 *{
 	font-family: "Montserrat", sans-serif;
 }
@@ -5,7 +7,9 @@
 body{
     background-color: #f1f1f1;
 	margin: 0px;
+	padding: 0px;
 	width: 450px;
+	font-size: 16px;
 
 }
 
@@ -77,93 +81,63 @@ li{
 	color: white;
 }
 
-.content-box{
-	background-color: white;
-	margin: 10px;
-	border-radius: 5px;
-}
-
-.content{
-	padding:10px
-
-}
-
 .btn{
-	padding: 9px 2px;
+	padding: 5px 17px;
 	background-color: #24252a;
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
 	color:white;
+	position: relative;
+	top: -5px;
 }
 
 .btn:hover{
 	background-color: #40404d;
 }
 
-#yourip{
-	margin-left: 25px;
-	font-size: 24px;
-
-}
-
-#ipv4{
-	color: #40404d;
-	font-size: 35px;
-	grid-area: ip;
-}
-
 .tabcontent{
-	display: none;
-}
-
-.tablinks{
-	margin-left: 10px;
-}
-
-.content-grid{
-	display: grid;
-	grid-template-columns: 250px 100px;
-	grid-template-rows: 50px 40px 40px;
-	grid-template-areas: 
-		"hello hello2"
-		"ip copy"
-		"telekom telekom2";
-}
-
-#ipcopybtn{
-	grid-area: copy;
-}
-
-#welcome-text{
-	grid-area: hello;
+	background-color: white;
+	border-radius: 6px;
+	margin: 10px;
 }
 
 #reload-btn{
 	float: right;
-	font-size: 16px;
+	margin: 10px;
+}
 
+#your-ip-information{
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#ipv4{
+	font-size: 32px;
+	font-weight: bolder;
 }
 
 #isp{
-	grid-area: telekom;
-	font-size: 12px;
+	font-size: 16px;
 }
 
-#more-details{
-	font-size: 15px;
-	cursor: pointer;
+#more-ip-details{
+	margin-left: 30px;
+	list-style: none;
+	padding-bottom: 15px;
 }
 
-#details{
-	display: none;
+#table-more-detials{
+	width: 90%;
+	border-collapse: collapse;
+	
 }
 
-#close-details-btn{
-	display: none;
-}
-
-#speedtest{
-	text-align: center;
-	cursor: pointer;
-}
+th, td {
+	text-align: left;
+	padding: 5px;
+	padding-top: 10px;
+  }

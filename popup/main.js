@@ -20,7 +20,6 @@ fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9ccc
     isp.innerHTML = data.isp;
     country.innerHTML = data.country_name;
     city.innerHTML = data.city;
-    zipcode.innerHTML = data.zipcode;
     iptype.innerHTML = data.type;
 
 });
@@ -28,6 +27,7 @@ fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9ccc
 
 const tablinksHome = document.getElementById("tablinksHome");
 const tablinksSpeedtest1 = document.getElementById("tablinksSpeedtest1");
+//const tablinksSettings = document.getElementById("tablinksSettings");
 
 tablinksHome.onclick = function(){
   changeTabContent(event, 'yourip')
@@ -36,6 +36,10 @@ tablinksHome.onclick = function(){
 tablinksSpeedtest1.onclick = function(){
   changeTabContent(event, 'speedtest-by-geschwindigkeit')
 }
+
+//tablinksSettings.onclick = function(){
+//  changeTabContent(event, 'settings')
+//}
 
 changeTabContent(event, 'yourip');
 
@@ -79,4 +83,3 @@ function copy(text)
         document.body.removeChild(textarea);
     }
 }
-

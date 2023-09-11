@@ -18,8 +18,8 @@ fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9ccc
     console.log(data);
     ipv4.innerHTML = data.ip;
     isp.innerHTML = data.isp;
-    country.innerHTML = data.country_name;
-    city.innerHTML = data.city;
+    //country.innerHTML = data.country_name;
+    //city.innerHTML = data.city;
     iptype.innerHTML = data.type;
 
 });

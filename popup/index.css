@@ -60,6 +60,12 @@ li{
 	list-style: none;
 }
 
+.bx{
+	position: relative;
+	top: 3px;
+	font-size: 20px;
+}
+
 
 .linkblau{
 	color:blue;
@@ -78,7 +84,7 @@ li{
 
 .menu{	
 	cursor: pointer;
-	margin-right: 20px;
+	margin-right: 10px;
 	color: white;
 	display: flex;
 	justify-content: right;
@@ -88,12 +94,12 @@ li{
 	padding: 6px 17px;
 	background-color: #24252a;
 	border: none;
-	border-radius: 15px;
+	border-radius: 50px;
 	cursor: pointer;
 	color:white;
 	position: relative;
 	top: -5px;
-	transition: background-color 0.1s ease-out;
+	transition: background-color 0.3s ease-out;
 
 }
 
@@ -105,6 +111,7 @@ li{
 	background-color: white;
 	border-radius: 6px;
 	margin: 5px;
+	position: relative;
 }
 
 .tablinks{
@@ -117,12 +124,24 @@ li{
 	border-radius: 5px;
 	transition: 0.2s;
 	text-decoration: none;
-	
+}
+
+.whitehover{
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.whitehover:hover{
+	background-color: #a3a3a380;
+	transition: 0.2s;
+	text-decoration: none;
+
 }
 
 #reload-btn{
-	float: right;
-	margin: 10px;
+	position: absolute;
+	right: 0;
+	padding: 10px;
 }
 
 #your-ip-information{
@@ -134,7 +153,7 @@ li{
 }
 
 #ipv4{
-	font-size: 32px;
+	font-size: 42px;
 	font-weight: bolder;
 }
 

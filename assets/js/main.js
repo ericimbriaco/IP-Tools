@@ -8,7 +8,6 @@ const isp = document.getElementById('isp');
 const country = document.getElementById('country');
 const city = document.getElementById('city');
 const zipcode = document.getElementById('zipcode');
-const iptype = document.getElementById('iptype');
 
 fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9cccd')
 //fetch('http://ipwho.is/')
@@ -20,13 +19,13 @@ fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9ccc
     isp.innerHTML = data.isp;
     //country.innerHTML = data.country_name;
     //city.innerHTML = data.city;
-    iptype.innerHTML = data.type;
 
 });
 //--------------- TAB CHANGER (INDEX - SPEEDTEST)---------------
 
 const tablinksHome = document.getElementById("tablinksHome");
 const tablinksSpeedtest1 = document.getElementById("tablinksSpeedtest1");
+const tablinksQR = document.getElementById("tablinksQR");
 //const tablinksSettings = document.getElementById("tablinksSettings");
 
 tablinksHome.onclick = function(){
@@ -35,6 +34,10 @@ tablinksHome.onclick = function(){
 
 tablinksSpeedtest1.onclick = function(){
   changeTabContent(event, 'speedtest-by-geschwindigkeit')
+}
+
+tablinksQR.onclick = function(){
+  changeTabContent(event, 'qr-code-generator')
 }
 
 //tablinksSettings.onclick = function(){
@@ -55,14 +58,14 @@ function changeTabContent(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
-
 //--------------- COPY FUNCTION BY ALEXEJ ---------------
 const copyText = document.getElementById("ipv4");
 const copyTextbtn = document.getElementById("ipcopybtn");
 
 copyTextbtn.onclick = function(){
-    copy(copyText.innerHTML);
+    copy(ipv4);
 }
+
 
 
 function copy(text)

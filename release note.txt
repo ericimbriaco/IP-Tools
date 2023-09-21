@@ -19,3 +19,21 @@ Version 1.3.1
 
 + Add Icons
 ~ Bug fixes
+- Remove IPv6, Country, City, Zipcode
+
+V 1.4
+
++ Add QR Code Generator Tab
+	+ Add new "qrcode.js"
+	+ Add download button
+	- API from "goqr.me"
++ Add DropDown Header menu
++ Create new Option Site
++ Added Tooltips
++ Add "test.html" for testing
++ Add Tools Bar
+~ New CSS and JS File Managment
+~ Bugfixes
+- Edit ".gitignore"
+- Edit CSS "INPUT"
+

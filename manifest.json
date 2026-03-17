@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "TitanRTX IP Tools",
   "description": "IP Address, Speedtest and QR Code Generator",
-  "version": "1.4",
+  "version": "1.4.1",
 
   "action": {
     "default_popup": "/popup/index.html"

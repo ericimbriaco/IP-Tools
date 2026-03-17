@@ -7,18 +7,20 @@ const ipv4 = document.getElementById('ipv4');
 const isp = document.getElementById('isp');
 const country = document.getElementById('country');
 const city = document.getElementById('city');
-const zipcode = document.getElementById('zipcode');
 
-fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9cccd')
+//fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9cccd')
+fetch('https://api.geoiplookup.net/?json=true')
 //fetch('http://ipwho.is/')
+//OLD API KEY(https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9cccd)
 .then((res) => res.json())
 .then((data) => {
+  // NEW API: https://api.geoiplookup.net/?json=true
     // API: https://ipgeolocation.io/documentation/ip-geolocation-api.html
     console.log(data);
     ipv4.innerHTML = data.ip;
     isp.innerHTML = data.isp;
-    //country.innerHTML = data.country_name;
-    //city.innerHTML = data.city;
+    country.innerHTML = data.countryname;
+    city.innerHTML = data.city;
 
 });
 //--------------- TAB CHANGER (INDEX - SPEEDTEST)---------------
@@ -26,7 +28,8 @@ fetch('https://api.ipgeolocation.io/ipgeo?apiKey=62120e09c8984b9b8cea4ae931e9ccc
 const tablinksHome = document.getElementById("tablinksHome");
 const tablinksSpeedtest1 = document.getElementById("tablinksSpeedtest1");
 const tablinksQR = document.getElementById("tablinksQR");
-//const tablinksSettings = document.getElementById("tablinksSettings");
+const tablinksSettings = document.getElementById("tablinksSettings");
+const tablinksOokla = document.getElementById("tablinksOokla");
 
 tablinksHome.onclick = function(){
   changeTabContent(event, 'yourip')
@@ -38,6 +41,10 @@ tablinksSpeedtest1.onclick = function(){
 
 tablinksQR.onclick = function(){
   changeTabContent(event, 'qr-code-generator')
+}
+
+tablinksOokla.onclick = function(){
+  changeTabContent(event, 'speedtest-by-ookla')
 }
 
 //tablinksSettings.onclick = function(){

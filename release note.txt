@@ -1,3 +1,8 @@
+v1.5
+- neue ip api weil andere nicht funktioniert hat
+- css fixes
+
+
 Version 1.1
 
 -You can change between ookla Speedtest or geschwindikkeit.de

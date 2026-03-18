@@ -17,7 +17,8 @@
   "permissions":[
     "clipboardWrite",
     "notifications",
-    "storage"
+    "storage",
+    "downloads"
   ],
 
   "background":{

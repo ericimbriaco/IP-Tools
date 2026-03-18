@@ -1,17 +1,19 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 	<meta charset="utf-8">
 	<title>wer das liest ist dumm</title>
 	<link href="index.css" rel="stylesheet">
-	<link rel="stylesheet" href="/assets/css/design.css" class="css">
+	<link rel="stylesheet" href="/assets/design.css" class="css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -19,58 +21,65 @@
 
 <body>
 	<header>
-		<div id="iptoolslogo">IP Tools</div>
+		<div id="iptoolslogo" style="color: white;">What is my IP?</div>
 		<div class="navi">
 			<div class="menu">
-				<li>
-					<a class="tablinks" id="tablinksHome"><i class='bx bx-search' ></i> My IP</a>
-					<a class="tablinks" id="tablinksSpeedtest1"><i class='bx bxs-tachometer' ></i> Speedtest</a>
-				</li>
-			</div>
-
-
-			<div class="submenu">
-					<a class="tablinks submenu"><i class='bx bx-dots-vertical-rounded'></i></a>
-		
-				<div class="submenu-content">
-					<li><a class="tablinks " id="tablinksQR"><i class='bx bx-qr' ></i> QR Code Gernator</a></li>
-					<li><a class="tablinks " id="tablinksOokla"><i class='bx bx-tachometer' ></i> Ookla Speedtest</a></li>
-					<!--<li><a class="tablinks " id="tablinksQR"><i class='bx bx-palette' ></i> Color Picker</a></li>
-					<li><a class="tablinks" id="" href="https://paypal.com" target="_blank"><i class='bx bx-heart' ></i> Donate</a></li>
-					<li><a href="/option/index.html" target="_blank" class="tablinks " id=""><i class='bx bx-cog' ></i> Settings</a></li>
-					-->
-				</div>
+				<nav>
+					<a class="tablinks b" id="tablinksHome"><i class='bx bx-search'></i>My IP Address</a>
+					<a class="tablinks b" id="tablinksSpeedtest1"><i class='bx bxs-tachometer'></i>Speedtest</a>
+					<a class="tablinks b" id="tablinksQR"><i class='bx bx-qr'></i></a>
+				</nav>
 			</div>
 		</div>
 
-	
+
 	</header>
 
 	<main>
 		<!--TAB: YOUR IP-->
 		<section class="tabcontent" id="yourip">
-			
-			<div class="tool-buttons">
-				<a href="" class ="linkblack whitehover" title="Refresh"><i class='bx bx-reset' ></i></a>
-				<a id="ipcopybtn" class ="linkblack whitehover" title="Copy" style=" cursor: pointer;"><i class='bx bx-clipboard'></i></a>
+
+			<div class="tool-bar">
+
+				<div class="tool-text">
+					<div style="display: none;" id="errorOffline"><i class='bx bxs-error-circle'></i> <span id="errortext"></span></div>
+					
+				</div>
+
+				<div class="tool-buttons">
+					<a href="" class="ico-btn" title="Refresh"><i class='bx bx-refresh'></i></a>
+					<a id="ipcopybtn" class="ico-btn" title="Copy"><i class='bx bx-copy-alt'></i></a>
+				</div>
+
 			</div>
 
-			<div id="your-ip-information">
-				<p>Hello, your IP is: <br> <span id="ipv4"><i class='bx bx-md bx-loader bx-spin bx-rotate-180' ></i> Please wait...</span> <br> <span id="isp"></span></p>
-			</div>
+			<div class="ip-info">
+				<div class="ip-container">
+					<span>my IP Address is:</span><br>
+					<span id="ipv4">Loading...</span>
+					<div class="ip-isp">
+						<span id="countryCode">..</span> -
+						<span id="isp">...</span>
+					</div>
+				</div>
 
-			<div id="geolocation" style="color: #c9c9c9; font-size: 12px; text-align: center;" >
-				<span id="city"></span><span id="country"></span>
+
 			</div>
 		</section>
 
 
 		<!--TAB: SPEEDTEST-->
 		<section class="tabcontent" id="speedtest-by-geschwindigkeit">
-			<div style="text-align:right; padding: 15px;"><div style="min-height:360px;"><div style="width:100%;height:0;padding-bottom:50%;position:relative;"><iframe style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;min-height:360px;border:none;overflow:hidden !important;" src="https://www.metercustom.net/plugin/?hl=de&th=w"></iframe></div></div></div>
+			<div style="text-align:right; padding: 15px;">
+				<div style="min-height:360px;">
+					<div style="width:100%;height:0;padding-bottom:50%;position:relative;"><iframe
+							style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;min-height:360px;border:none;overflow:hidden !important;"
+							src="https://www.metercustom.net/plugin/?hl=de&th=w"></iframe></div>
+				</div>
+			</div>
 		</section>
 
-			<!--TAB: SPEEDTEST.OOKLA
+		<!--TAB: SPEEDTEST.OOKLA
 		<section class="tabcontent" id="speedtest-by-ookla">
 			<iframe width="99%" height="650px" src="http://titanrtx.speedtestcustom.com"></iframe>
 		</section>
@@ -79,44 +88,56 @@
 
 		<!--TAB: QR CODE GENERATOR-->
 		<section class="tabcontent" id="qr-code-generator">
+			<div class="tool-bar">
+				<div class="tool-text">
 
-			<div class="tool-buttons" >
-				<a href="/media/test-qr.png" class ="linkblack whitehover tooltip" data-tooltip="Download" id="qr-code-generator-download-link" download style="visibility: hidden;"><i class='bx bx-download' ></i></a>
-			</div>
-			<h1>QR Code Generator</h1>
-			<p style="text-align: center;">Write your link or text in the field <br> and don't forget "https://"</p>
-			
+				</div>
 
-			<form style="display: flex; justify-content: center;">
-				<!-- <label style="display:none; position:absolute; right: 25px;" for="qr-code-generator_input"><i class='bx bx-sm bx-loader bx-spin bx-rotate-180' ></i></label> -->
-				<input id="qr-code-generator_input" type="text" placeholder="https://example.com">
-				<a id="qr-code-generator_submit" class ="linkblack whitehover" style="cursor: pointer;"><i class='bx bx-right-arrow-alt'></i></a>
-			</form>
-			<div id="qr-code-generator-image" style="display: flex; justify-content: center; padding: 2rem 0rem;">
-				<img id="qr-code-generator-img" width="150px" src="/media/test-qr.png" alt="">
-				
+				<div class="tool-buttons"><a href="" class="ico-btn" title="Download"><i class='bx bx-download'></i></a>
+				</div>
 			</div>
-			
+			<hr>
+			<div class="wrapper">
+				<h1>QR Code Generator</h1>
+				<p>Paste your link into the text field to instantly generate a QR code.</p>
+
+				<form>
+					<!-- <label style="display:none; position:absolute; right: 25px;" for="qr-code-generator_input"><i class='bx bx-sm bx-loader bx-spin bx-rotate-180' ></i></label> -->
+					<input id="qr-code-generator_input" type="text" placeholder="https://example.com" required>
+
+
+				</form>
+
+				<div class="form-submit">
+					<button id="qr-code-generator_submit"> Generate</button>
+				</div>
+				<div id="qr-code-generator-image" class="t-flex-center t-pad-big">
+					<img id="qr-code-generator-img" width="150px" src="/media/test-qr.png" alt="">
+
+				</div>
+				<p>To download it, simply right-click and choose “Save As.”</p>
+				<p>Service provided by <a href="https://goqr.me/">goqr.me</a></p>
+			</div>
+
 		</section>
 
 	</main>
 
 	<footer>
 		<div class="footer-container">
-<p>© <span id = "year"></p>
+			<p>Made with ❤️</p>
 		</div>
 		<div class="footer-container">
-			<a href=""><img src="https://img.shields.io/badge/github-repo-blue?logo=github" alt=""></a>
+			<a href="https://github.com/ericimbriaco/IP-Tools"><img
+					src="https://img.shields.io/badge/github-repo-24252a?logo=github" alt=""></a>
 
 		</div>
 
 	</footer>
 
-	<script src="/assets/js/main.js"></script>
-	<script src="/assets/js/qrcode.js"></script>
+	<script src="/assets/main.js"></script>
 
 
 </body>
 
 </html>
-

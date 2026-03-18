@@ -1,30 +1,13 @@
 v1.5
 - neue ip api weil andere nicht funktioniert hat
-- css fixes
-
-
-Version 1.1
-
--You can change between ookla Speedtest or geschwindikkeit.de
--Change Folder Structure
--Add Tab System
--Add Grid Lyout for IP Info
--Add More Details Buttom
--Add Reload Button
-
-Version 1.2
-
-+ Add "Click for more INFOMATIOENS Section"
-+ Add IPv6, Country, City, Zipcode
-~ Fixed Font size
-~ Genral Bug Fixes
-- Remove Grid Layout
-
-Version 1.3.1
-
-+ Add Icons
-~ Bug fixes
-- Remove IPv6, Country, City, Zipcode
+- many css fixes
+- change folder Structure
+- change ip api
+- change font to dm sans
+- redsign qr code Generator 
+- redesign your ip
+- tools button now works+!!!!!!
+- edited footer
 
 V 1.4
 
@@ -41,4 +24,29 @@ V 1.4
 ~ Bugfixes
 - Edit ".gitignore"
 - Edit CSS "INPUT"
+
+
+Version 1.3.1
+
++ Add Icons
+~ Bug fixes
+- Remove IPv6, Country, City, Zipcode
+
+Version 1.2
+
++ Add "Click for more INFOMATIOENS Section"
++ Add IPv6, Country, City, Zipcode
+~ Fixed Font size
+~ Genral Bug Fixes
+- Remove Grid Layout
+
+Version 1.1
+
+-You can change between ookla Speedtest or geschwindikkeit.de
+-Change Folder Structure
+-Add Tab System
+-Add Grid Lyout for IP Info
+-Add More Details Buttom
+-Add Reload Button
+
 
